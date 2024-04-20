@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1F2833;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 70px auto;
+  padding: 30px;
+  background-color: #1F4959;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #f2cd93;
+}
+h2 {
+  color: #B0FC38;
+}
+p {
+  color: white;
+}
+pre {
+  background-color: #45A29E;
+  padding: 10px;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%; /* Change max-width to 100% for responsiveness */
+    margin: 30px auto; /* Adjust margin for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
