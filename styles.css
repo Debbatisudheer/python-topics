@@ -43,19 +43,19 @@ code {
   }
    /* Adjust text size for mobile screens */
   h1 {
-    font-size: 22px;
-  }
-
-  h2 {
     font-size: 18px;
   }
 
-  p {
+  h2 {
     font-size: 14px;
   }
 
+  p {
+    font-size: 10px;
+  }
+
   code {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
