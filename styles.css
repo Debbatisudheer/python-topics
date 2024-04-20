@@ -33,6 +33,16 @@ code {
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 14px;
 }
+footer {
+    background-color: #32612D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 600px) {
