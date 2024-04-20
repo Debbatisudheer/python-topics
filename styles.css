@@ -43,6 +43,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.main-heading {
+    text-align: center; /* Center text */
+}
+
+.main-heading h1 {
+    color: #ff69b4; /* Pink color */
+}
 
 /* Media query for mobile screens */
 @media only screen and (max-width: 600px) {
@@ -80,4 +87,3 @@ footer {
     width: 100%;
 }
   }
-
