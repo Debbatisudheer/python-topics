@@ -58,6 +58,8 @@ code {
     font-size: 10px;
   }
   /* Footer Styles */
+
+}
 footer {
     background-color: #32612D;
     color: white;
@@ -67,6 +69,5 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
 }
 
