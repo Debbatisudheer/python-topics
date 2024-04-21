@@ -9,6 +9,7 @@
 <body>
 <div class="main-heading">
         <h1>Python Topics</h1>
+   <h1>VARIABLES</h1>
     </div>
   <div class="container">
     <h1>Variables: The Ingredients of Biryani</h1>
@@ -536,8 +537,1605 @@ Spices: spices
 </output>
 </div>
 
-  <footer>
-        @sudheer debbati all rights reserved
+<div class="main-heading">
+  <p></p>
+   <h1>DATA TYPES</h1>
+<p></p>
+   </div>
+<div class="container">
+        <h1>Python Data Types</h1>
+        <p>Data type refers to the classification or categorization of data items. It specifies the type of value that a variable can hold, such as <code>integer</code>, <code>float</code>, <code>string</code>, <code>list</code>, <code>tuple</code>, <code>dictionary</code>, etc. Data types determine how the data is stored in memory and what operations can be performed on it.</p>
+        <h2>Common Data Types in Python</h2>
+        <ul>
+            <li><strong>Integer (int):</strong> Represents whole numbers without any decimal points, such as <code>5</code>, <code>-10</code>, <code>1000</code>.</li>
+            <li><strong>Float (float):</strong> Represents numbers with decimal points, such as <code>3.14</code>, <code>-0.5</code>, <code>2.0</code>.</li>
+            <li><strong>String (str):</strong> Represents sequences of characters enclosed within single quotes (''), double quotes ("") or triple quotes (""" """), such as <code>"hello"</code>, <code>'world'</code>, <code>"123"</code>.</li>
+            <li><strong>List:</strong> Represents ordered collections of items enclosed within square brackets <code>[]</code>, where items can be of any data type and can be modified, added, or removed, such as <code>[1, 2, 3]</code>, <code>['apple', 'banana', 'orange']</code>, <code>[1, 'hello', 3.14]</code>.</li>
+            <li><strong>Tuple:</strong> Represents ordered collections of items enclosed within parentheses <code>()</code>, similar to lists but immutable, meaning they cannot be modified after creation, such as <code>(1, 2, 3)</code>, <code>('apple', 'banana', 'orange')</code>, <code>(1, 'hello', 3.14)</code>.</li>
+            <li><strong>Dictionary (dict):</strong> Represents unordered collections of key-value pairs enclosed within curly braces <code>{}</code>, where keys are unique and immutable, such as <code>{'name': 'John', 'age': 30, 'city': 'New York'}</code>.</li>
+            <li><strong>Boolean (bool):</strong> Represents a binary value of either <code>True</code> or <code>False</code>, used to represent logical values in Python.</li>
+        </ul>
+   <h1>Biryani</h1>
+  <p>Imagine you're preparing a biryani recipe, and you have different types of ingredients in your kitchen, such as rice, chicken, vegetables, and spices. Each ingredient has its own characteristics and properties, just like different data types in Python have their own characteristics and behaviors.</p>
+
+  <h2>Rice (String)</h2>
+  <p>In the biryani analogy, rice represents strings in Python. Strings are sequences of characters, just like rice grains are individual pieces that make up a whole dish. You can manipulate strings by slicing, concatenating, or formatting them, just like you can cook rice in different ways—boiled, fried, or flavored.</p>
+
+  <h2>Chicken (Integer)</h2>
+  <p>Chicken represents integers in Python. Integers are whole numbers without any decimal points, just like counting the number of chicken pieces you'll use in your recipe. You can perform arithmetic operations like addition, subtraction, multiplication, and division on integers, just like you can calculate the total number of chicken pieces needed for your biryani.</p>
+
+  <h2>Vegetables (Lists)</h2>
+  <p>Vegetables represent lists in Python. Lists are ordered collections of items, just like a variety of vegetables you might add to your biryani. You can add, remove, or modify items in a list, just like you can mix and match different vegetables in your recipe.</p>
+
+  <h2>Spices (Dictionary)</h2>
+  <p>Spices represent dictionaries in Python. Dictionaries are collections of key-value pairs, just like the combination of spices and their quantities you'll use in your biryani. You can access, add, remove, or modify items in a dictionary by their keys, just like you can adjust the quantity of spices in your recipe.</p>
+
+  <p>In summary, data types in Python are like different ingredients in a recipe—they have their own properties and behaviors, and understanding how to use them effectively allows you to create delicious and well-organized code, just like preparing a flavorful biryani.</p>
+    <pre><code># Define different types of ingredients for biryani
+rice = "Basmati"
+chicken_pieces = 4
+vegetables = ["onion", "tomato", "potato"]
+spices = {"cumin": "1 tsp", "coriander": "1 tsp", "turmeric": "1/2 tsp"}
+
+# Display the type and content of each ingredient
+print("Type and Content of Ingredients:")
+print("Rice - Type:", type(rice), "Content:", rice)
+print("Chicken Pieces - Type:", type(chicken_pieces), "Content:", chicken_pieces)
+print("Vegetables - Type:", type(vegetables), "Content:", vegetables)
+print("Spices - Type:", type(spices), "Content:", spices)</code></pre>
+
+  <p>output:</p>
+<ul>
+  <li>Rice - Type: &lt;class 'str'&gt; Content: Basmati</li>
+  <li>Chicken Pieces - Type: &lt;class 'int'&gt; Content: 4</li>
+  <li>Vegetables - Type: &lt;class 'list'&gt; Content: ['onion', 'tomato', 'potato']</li>
+  <li>Spices - Type: &lt;class 'dict'&gt; Content: {'cumin': '1 tsp', 'coriander': '1 tsp', 'turmeric': '1/2 tsp'}</li>
+</ul>
+
+</div>
+<div class="container">
+  <h1>Primitive Data Types</h1>
+  <h2>Integers:</h2>
+  <p>Integers are whole numbers without any decimal points. You can create integer variables by simply assigning a whole number to a variable.</p>
+  <pre><code># Creating integer variables
+x = 5
+y = -10
+z = 1000</code></pre>
+  <p>Basic operations:</p>
+  <ul>
+    <li>Addition (+), subtraction (-), multiplication (*), division (/)</li>
+    <li>Integer division (//), modulus (%), exponentiation (**)</li>
+  </ul>
+
+  <h2>Floats:</h2>
+  <p>Floats are numbers with decimal points. You can create float variables by assigning a number with a decimal point to a variable.</p>
+  <pre><code># Creating float variables
+pi = 3.14
+temperature = 25.5</code></pre>
+  <p>Basic operations:</p>
+  <ul>
+    <li>Same as integers: addition, subtraction, multiplication, division</li>
+    <li>Also supports float-specific operations like modulus, exponentiation</li>
+  </ul>
+
+  <h2>Strings:</h2>
+  <p>Strings are sequences of characters enclosed within single quotes (''), double quotes ("") or triple quotes (""" """). You can create string variables by assigning a sequence of characters to a variable.</p>
+  <pre><code># Creating string variables
+name = "Alice"
+greeting = 'Hello, World!'</code></pre>
+  <p>Basic operations:</p>
+  <ul>
+    <li>Concatenation (+), repetition (*)</li>
+    <li>Indexing and slicing to access individual characters or substrings</li>
+  </ul>
+
+  <h2>Booleans:</h2>
+  <p>Booleans represent binary values of either True or False. You can create boolean variables by assigning True or False to a variable.</p>
+  <pre><code># Creating boolean variables
+is_student = True
+is_adult = False</code></pre>
+  <p>Basic operations:</p>
+  <ul>
+    <li>Logical operations: and, or, not</li>
+  </ul>
+
+  <h2>NoneType:</h2>
+  <p>NoneType is a special data type in Python representing the absence of a value or a null value. You can create variables of NoneType by assigning None to a variable.</p>
+  <pre><code># Creating NoneType variables
+result = None</code></pre>
+  <p>Basic operations:</p>
+  <ul>
+    <li>NoneType variables are mainly used to indicate the absence of a value or as a placeholder.</li>
+  </ul>
+    <h2>Biryani</h2>
+        <p><strong>Rice (Integers):</strong> In the biryani analogy, integers are akin to the main ingredient, rice. They are whole numbers without any decimal points, much like rice grains are complete without any additional parts. You can count them, add them, or subtract them, just as you would measure rice or divide it into portions.</p>
+
+        <p><strong>Spices (Floats):</strong> Floats resemble the spices used to flavor biryani. They can have decimal points, allowing for more precise measurements, similar to how spices are added in varying quantities to adjust the flavor of the dish. You can mix them, sprinkle them, or adjust their proportions, just as you can adjust the amount of spice in a recipe.</p>
+
+        <p><strong>Ingredients List (Strings):</strong> Strings represent the list of ingredients needed to make biryani. They signify sequences of characters, similar to how a list of ingredients represents a sequence of items needed for cooking. You can concatenate strings together, slice them to access individual characters or substrings, just as you can mix and match ingredients or</p>
+
+        <p><strong>Recipe (Booleans):</strong> Booleans are like the instructions in a recipe. They represent binary values of either True or False, indicating whether certain conditions are met or not. Just like a recipe tells you whether to add an ingredient or perform a step based on specific conditions, booleans can control the flow of your program based on logical expressions.</p>
+
+  <p><strong>Empty Plate (NoneType):</strong> NoneType is like an empty plate waiting to be filled with food. It represents the absence of a value or a null value, just like an empty plate represents the absence of food. It can be used as a placeholder or to indicate that a variable has not been assigned a value yet.</p>
+     <h2>Python Code Example: Primitive Data Types</h2>
+        <pre><code># Integers - Representing the main ingredient, rice
+rice_quantity = <span style="color: #880000;">2</span>  <span style="color: #666666;"># Using 2 cups of rice</span>
+
+# Floats - Representing the spices used in biryani
+cumin = <span style="color: #880000;">1.5</span>  <span style="color: #666666;"># 1.5 teaspoons of cumin</span>
+coriander = <span style="color: #880000;">2.0</span>  <span style="color: #666666;"># 2 teaspoons of coriander</span>
+turmeric = <span style="color: #880000;">0.5</span>  <span style="color: #666666;"># 0.5 teaspoon of turmeric</span>
+
+# Strings - Representing the list of ingredients needed
+ingredients_list = <span style="color: #008800;">"rice, chicken, onions, tomatoes, spices"</span>
+
+# Booleans - Representing whether certain ingredients are available
+has_chicken = <span style="color: #0000DD;">True</span>  <span style="color: #666666;"># Chicken is available</span>
+has_potatoes = <span style="color: #0000DD;">False</span>  <span style="color: #666666;"># Potatoes are not available</span>
+
+# NoneType - Representing an empty plate
+empty_plate = <span style="color: #666666;">None  </span><span style="color: #666666;"># No food on the plate yet</span></code></pre>
+  <h2>Explanation:</h2>
+
+    <ul>
+        <li><strong>rice_quantity:</strong> an integer representing the amount of rice needed.</li>
+        <li><strong>cumin, coriander, turmeric:</strong> floats representing the quantities of spices.</li>
+        <li><strong>ingredients_list:</strong> a string representing the list of ingredients.</li>
+        <li><strong>has_chicken, has_potatoes:</strong> booleans indicating whether certain ingredients are available.</li>
+        <li><strong>empty_plate:</strong> a NoneType representing an empty plate waiting to be filled with food.</li>
+    </ul>
+</div>
+ <div class="container">
+        <h1>Data Structures in Python</h1>
+
+        <div class="data-structure">
+            <h2>Lists:</h2>
+            <p><strong>Characteristics:</strong> Lists are ordered collections of items enclosed within square brackets [ ]. They can contain elements of different data types and are mutable.</p>
+            <p><strong>Operations:</strong> You can access elements by index, slice lists, concatenate lists, append or remove elements, and more.</p>
+            <p><strong>When to use:</strong> Use lists when you need an ordered collection of items that may change over time.</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Tuples:</h2>
+            <p><strong>Characteristics:</strong> Tuples are ordered collections of items enclosed within parentheses ( ). They can contain elements of different data types and are immutable.</p>
+            <p><strong>Operations:</strong> You can access elements by index, concatenate tuples, and unpack them into individual variables.</p>
+            <p><strong>When to use:</strong> Use tuples when you have a collection of items that should remain constant throughout the program's execution.</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Dictionaries:</h2>
+            <p><strong>Characteristics:</strong> Dictionaries are unordered collections of key-value pairs enclosed within curly braces { }. They are mutable and each key must be unique.</p>
+            <p><strong>Operations:</strong> You can access, add, remove, or modify elements by their keys, iterate over keys or values, check for the presence of keys, and more.</p>
+            <p><strong>When to use:</strong> Use dictionaries when you need to store data in key-value pairs and quickly retrieve values based on keys.</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Sets:</h2>
+            <p><strong>Characteristics:</strong> Sets are unordered collections of unique elements enclosed within curly braces { }. They do not allow duplicate elements and are mutable.</p>
+            <p><strong>Operations:</strong> You can perform set operations like union, intersection, difference, and symmetric difference, as well as add, remove, or check for the presence of elements.</p>
+            <p><strong>When to use:</strong> Use sets when you need to work with unique elements and perform set operations.</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Frozen Sets:</h2>
+            <p><strong>Characteristics:</strong> Frozen sets are immutable versions of sets. They share similar characteristics and operations with sets but cannot be changed.</p>
+            <p><strong>Operations:</strong> Similar to sets, but frozen sets do not support operations that modify the set, such as adding or removing elements.</p>
+            <p><strong>When to use:</strong> Use frozen sets when you need a set-like data structure that should remain constant throughout the program's execution.</p>
+        </div>
+    </div>
+ <div class="container">
+        <h1>Biryani Analogy: Python Data Structures</h1>
+
+        <div class="data-structure">
+            <h2>Lists:</h2>
+            <p><strong>Analogy:</strong> Lists are like the ingredients you gather to make biryani, such as rice, chicken, vegetables, and spices. You can arrange them in any order and modify the list by adding, removing, or changing ingredients as needed.</p>
+            <p><strong>Example:</strong> ingredients = ["rice", "chicken", "vegetables", "spices"]</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Tuples:</h2>
+            <p><strong>Analogy:</strong> Tuples are like the recipe instructions for making biryani—they specify the sequence of steps to follow. Once you've finalized the recipe, you don't typically change it, similar to how tuples are immutable.</p>
+            <p><strong>Example:</strong> recipe_steps = ("boil rice", "marinate chicken", "chop vegetables", "add spices")</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Dictionaries:</h2>
+            <p><strong>Analogy:</strong> Dictionaries are like the flavor profile of your biryani—they map ingredients to their quantities and specify how to combine them. Each ingredient (key) has a corresponding quantity (value), allowing you to quickly look up ingredient quantities.</p>
+            <p><strong>Example:</strong> recipe = {"rice": "2 cups", "chicken": "500g", "vegetables": "mixed", "spices": "to taste"}</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Sets:</h2>
+            <p><strong>Analogy:</strong> Sets are like the unique flavors and aromas that define your biryani. They ensure that each flavor stands out distinctly, without repetition. You can combine sets to create new flavor combinations or check for the presence of specific flavors.</p>
+            <p><strong>Example:</strong> spice_set = {"cumin", "coriander", "turmeric", "garam masala"}</p>
+        </div>
+
+        <div class="data-structure">
+            <h2>Frozen Sets:</h2>
+            <p><strong>Analogy:</strong> Frozen sets are like the essential spices you always keep stocked in your kitchen—they don't change and remain constant over time. Once you've chosen your core set of spices, you don't typically add or remove them.</p>
+            <p><strong>Example:</strong> essential_spices = frozenset(["salt", "black pepper", "cinnamon", "cloves"])</p>
+        </div>
+    </div>
+ <div class="container">
+    <h1>Mutable and Immutable Data Types in Python</h1>
+
+    <h2>Mutable Data Types:</h2>
+    <ul>
+      <li>Mutable data types are those whose values can be changed after they are created.</li>
+      <li>When you modify a mutable object, you are actually changing the original object in memory.</li>
+      <li>Examples of mutable data types in Python include lists, dictionaries, and sets.</li>
+      <li>Because mutable objects can be modified, they may require more memory management.</li>
+    </ul>
+
+    <h2>Immutable Data Types:</h2>
+    <ul>
+      <li>Immutable data types are those whose values cannot be changed after they are created.</li>
+      <li>When you "modify" an immutable object, you are actually creating a new object with the modified value.</li>
+      <li>Examples of immutable data types in Python include integers, floats, strings, tuples, and frozensets.</li>
+      <li>Immutable objects are generally more memory-efficient because they do not require frequent memory allocation and deallocation.</li>
+    </ul>
+
+    <h2>Implications of Mutability:</h2>
+    <ul>
+      <li><strong>Variable Assignment:</strong> When you assign a mutable object to a variable, the variable holds a reference to the original object in memory. Any changes made to the object will affect all variables referencing it. When you assign an immutable object to a variable, the variable holds the actual value of the object, and modifying the variable creates a new object.</li>
+      <li><strong>Modification:</strong> With mutable objects, you can modify their contents directly, such as appending elements to a list or updating values in a dictionary. With immutable objects, you cannot modify their values directly. Instead, you create new objects with the desired changes.</li>
+      <li><strong>Memory Management:</strong> Mutable objects may lead to more complex memory management because changes to the object may affect other parts of the program. Immutable objects generally require less memory management overhead because they cannot be changed after creation.</li>
+    </ul>
+  </div>
+ <div class="container">
+    <h1>Mutable and Immutable Data Types in Python</h1>
+
+    <h2>Mutable Data Types:</h2>
+    <p>
+      <strong>Analogy:</strong> Mutable data types are like the ingredients you use to make biryani, such as rice, chicken, vegetables, and spices. You can change the quantity or type of ingredients as needed during the cooking process.
+      <br>
+      <strong>Example:</strong> Lists and dictionaries are mutable data types because you can add, remove, or modify elements or key-value pairs.
+    </p>
+
+    <h2>Immutable Data Types:</h2>
+    <p>
+      <strong>Analogy:</strong> Immutable data types are like the individual spices you add to your biryani—they remain unchanged once added to the dish. You cannot alter the composition or quantity of these spices once they are added.
+      <br>
+      <strong>Example:</strong> Integers, floats, strings, tuples, and frozensets are immutable data types because their values cannot be changed after creation.
+    </p>
+
+    <h2>Implications:</h2>
+    <ul>
+      <li><strong>Variable Assignment:</strong> Mutable data types are assigned by reference, meaning variables hold references to the original objects in memory. Changes to the object affect all variables referencing it. Immutable data types are assigned by value, meaning variables hold the actual values of the objects. Modifying the variable creates a new object with the modified value.</li>
+      <li><strong>Modification:</strong> With mutable data types, you can modify their contents directly, such as appending elements to a list or updating values in a dictionary. With immutable data types, you cannot modify their values directly. Instead, you create new objects with the desired changes.</li>
+      <li><strong>Memory Management:</strong> Mutable data types may require more complex memory management because changes to the object may affect other parts of the program. Immutable data types generally require less memory management overhead because they cannot be changed after creation.</li>
+    </ul>
+    <h1>Mutable and Immutable Data Types in Python</h1>
+
+    <h2>Mutable Data Type - List (Ingredients for biryani)</h2>
+    <pre><code>ingredients = ["rice", "chicken", "vegetables", "spices"]
+ingredients.append("potatoes")
+print("Mutable Data Type - List (Ingredients):", ingredients)</code></pre>
+    <p>The list ingredients represents mutable data type. We can modify it by adding an extra ingredient (potatoes) using the append() method.</p>
+
+    <h2>Immutable Data Type - Tuple (Recipe steps for making biryani)</h2>
+    <pre><code>recipe_steps = ("boil rice", "marinate chicken", "chop vegetables", "add spices")
+# Attempting to modify the tuple - Raises an error
+# recipe_steps.append("add potatoes")  # Uncomment to see the error
+print("Immutable Data Type - Tuple (Recipe Steps):", recipe_steps)</code></pre>
+    <p>The tuple recipe_steps represents immutable data type. When we attempt to modify it by adding an extra step (add potatoes), it raises an error because tuples cannot be modified after creation.</p>
+
+    <p>This code demonstrates the difference between mutable and immutable data types using a simple biryani analogy, making it easier to understand how they behave in Python.</p>
+  </div>
+  <div class="container">
+    <h1>Type Conversion in Python</h1>
+
+    <h2>Type Conversion:</h2>
+    <p>Type conversion, also known as type casting, refers to the process of converting one data type into another. Python provides built-in functions to perform type conversion, such as int(), float(), str(), list(), tuple(), dict(), and set().</p>
+
+    <h2>Built-in Type Conversion Functions:</h2>
+    <ul>
+      <li><code>int()</code>: Converts a value to an integer. If the value cannot be converted to an integer, it raises a ValueError.</li>
+      <li><code>float()</code>: Converts a value to a floating-point number. If the value cannot be converted to a float, it raises a ValueError.</li>
+      <li><code>str()</code>: Converts a value to a string. It returns a string representation of the value.</li>
+      <li><code>list()</code>: Converts a sequence (such as a tuple or string) to a list. It returns a list containing the elements of the sequence.</li>
+      <li><code>tuple()</code>: Converts a sequence (such as a list or string) to a tuple. It returns a tuple containing the elements of the sequence.</li>
+      <li><code>dict()</code>: Converts an iterable of key-value pairs (such as a list of tuples) to a dictionary. It returns a dictionary containing the key-value pairs.</li>
+      <li><code>set()</code>: Converts an iterable (such as a list or tuple) to a set. It returns a set containing the unique elements of the iterable.</li>
+    </ul>
+
+    <h2>Potential Loss of Information or Errors:</h2>
+    <p>During type conversion, there may be a loss of information if the conversion cannot be performed accurately. Errors may occur if the value cannot be converted to the desired type. Understanding how to perform type conversion in Python is essential for handling different data types and ensuring compatibility between them.</p>
+    <h1>Type Conversion with Biryani Analogy</h1>
+
+    <h2>Integers to Floats:</h2>
+    <p>Analogy: Imagine you have a recipe that calls for 2 cups of rice (an integer), but you need to convert it to 2.5 cups (a float) because you want to make a larger batch of biryani.</p>
+    <p>Example: <code>rice_quantity = int(2)</code> converts the integer 2 to a float 2.0.</p>
+
+    <h2>Floats to Integers:</h2>
+    <p>Analogy: Suppose you have 2.5 cups of rice (a float), but you want to convert it to 2 cups (an integer) because you only have whole cups available.</p>
+    <p>Example: <code>rice_quantity = float(2.5)</code> converts the float 2.5 to an integer 2.</p>
+
+    <h2>Integers/Floats to Strings:</h2>
+    <p>Analogy: When you write down the quantity of ingredients for your biryani recipe, you may want to convert the numerical values (integers/floats) to strings so that they can be displayed as text.</p>
+    <p>Example: <code>rice_quantity_str = str(2)</code> converts the integer 2 to the string "2".</p>
+
+    <h2>Strings to Integers/Floats:</h2>
+    <p>Analogy: If you receive a list of ingredients written as text (strings), you may need to convert them to numerical values (integers/floats) to perform calculations or measurements.</p>
+    <p>Example: <code>rice_quantity = int("2")</code> converts the string "2" to the integer 2.</p>
+
+    <h2>Lists to Tuples:</h2>
+    <p>Analogy: Imagine you have a list of ingredients for your biryani, but you want to convert it to a tuple because you've finalized the recipe and don't want to change the ingredients.</p>
+    <p>Example: <code>ingredients_tuple = tuple(["rice", "chicken", "vegetables", "spices"])</code> converts the list to a tuple.</p>
+
+    <h2>Tuples to Lists:</h2>
+    <p>Analogy: If you receive a finalized list of ingredients for your biryani as a tuple, but you need to modify it by adding or removing ingredients, you may want to convert it to a list.</p>
+    <p>Example: <code>ingredients_list = list(("rice", "chicken", "vegetables", "spices"))</code> converts the tuple to a list.</p>
+
+    <h2>Lists to Sets:</h2>
+    <p>Analogy: Suppose you have a list of ingredients, but you want to remove any duplicate ingredients and only keep unique ones, similar to preparing a unique spice blend for your biryani.</p>
+    <p>Example: <code>unique_spices_set = set(["cumin", "coriander", "cumin", "turmeric"])</code> converts the list to a set, removing duplicates.</p>
+
+    <pre>
+      <code>
+        # Integers to Floats
+        rice_quantity_int = 2
+        rice_quantity_float = float(rice_quantity_int)
+        print("Floats from Integers:", rice_quantity_float)
+
+        # Floats to Integers
+        rice_quantity_float = 2.5
+        rice_quantity_int = int(rice_quantity_float)
+        print("Integers from Floats:", rice_quantity_int)
+
+        # Integers/Floats to Strings
+        rice_quantity = 2
+        rice_quantity_str = str(rice_quantity)
+        print("Strings from Integers/Floats:", rice_quantity_str)
+
+        # Strings to Integers/Floats
+        rice_quantity_str = "2"
+        rice_quantity = int(rice_quantity_str)
+        print("Integers from Strings:", rice_quantity)
+
+        # Lists to Tuples
+        ingredients_list = ["rice", "chicken", "vegetables", "spices"]
+        ingredients_tuple = tuple(ingredients_list)
+        print("Tuples from Lists:", ingredients_tuple)
+
+        # Tuples to Lists
+        recipe_tuple = ("boil rice", "marinate chicken", "chop vegetables", "add spices")
+        recipe_list = list(recipe_tuple)
+        print("Lists from Tuples:", recipe_list)
+
+        # Lists to Sets
+        spices_list = ["cumin", "coriander", "cumin", "turmeric"]
+        unique_spices_set = set(spices_list)
+        print("Sets from Lists (removing duplicates):", unique_spices_set)
+      </code>
+    </pre>
+     <pre>
+      <code>
+        <p>output:</p>
+        Floats from Integers: 2.0
+        Integers from Floats: 2
+        Strings from Integers/Floats: 2
+        Integers from Strings: 2
+        Tuples from Lists: ('rice', 'chicken', 'vegetables', 'spices')
+        Lists from Tuples: ['boil rice', 'marinate chicken', 'chop vegetables', 'add spices']
+        Sets from Lists (removing duplicates): {'turmeric', 'coriander', 'cumin'}
+      </code>
+    </pre>
+  </div>
+
+
+<div class="container">
+ <h1>Type Checking and Casting in Python</h1>
+
+  <h2>Type Checking:</h2>
+  <p>Type checking involves determining the data type of a variable or value. In Python, you can use the <code>type()</code> function to check the type of an object. The <code>type()</code> function returns the type of the object as a class object.</p>
+  <pre><code class="python">
+    # Example of type checking
+    x = 5
+    print(type(x))  # Output: &lt;class 'int'&gt;
+  </code></pre>
+
+  <h2>Type Casting:</h2>
+  <p>Type casting involves converting a value from one data type to another. Python provides built-in functions for type casting, such as <code>int()</code>, <code>float()</code>, <code>str()</code>, etc. You can use these functions to convert values to a specific data type.</p>
+  <pre><code class="python">
+    # Example of type casting
+    x = "10"
+    y = int(x)
+    print(y)  # Output: 10
+  </code></pre>
+
+  <h2>isinstance() Function:</h2>
+  <p>The <code>isinstance()</code> function is used to check if an object belongs to a specific class or data type. It takes two parameters: the object to be checked and the class or data type. It returns <code>True</code> if the object is an instance of the specified class or data type, otherwise <code>False</code>.</p>
+  <pre><code class="python">
+    # Example of isinstance() function
+    x = 10
+    print(isinstance(x, int))  # Output: True
+  </code></pre>
+
+  <h2>Type Casting with 'as' Keyword:</h2>
+  <p>In Python, you can use the <code>as</code> keyword for type casting within expressions. It allows you to cast a value to a specific data type directly within an expression.</p>
+  <pre><code class="python">
+    # Example of type casting with 'as' keyword
+    x = "3.14"
+    y = float(x) as float
+    print(y)  # Output: 3.14
+  </code></pre>
+
+  <p>By using type checking and casting techniques, you can ensure that your program operates with the correct data types and handle values appropriately. These techniques are especially useful for validating input, performing calculations, and ensuring data consistency in your Python code.</p>
+    <h1>Type Checking and Casting with Biryani Analogy</h1>
+
+  <h2>Type Checking:</h2>
+  <p>Type checking is like identifying the ingredients used in a dish. Just as you can identify whether an ingredient is rice, chicken, or spices by looking at it, you can use the <code>type()</code> function in Python to determine the data type of a variable or value.</p>
+
+  <h2>Type Casting:</h2>
+  <p>Type casting is like transforming one ingredient into another form. If you have rice grains (a string) and you want to convert them into a measured quantity of rice (an integer), you can use the <code>int()</code> function to cast the string to an integer.</p>
+
+  <h2>isinstance() Function:</h2>
+  <p>The <code>isinstance()</code> function is like confirming whether an ingredient belongs to a specific category. Just as you can check if a spice is "cumin" by comparing it to a list of known spices, you can use the <code>isinstance()</code> function in Python to check if a variable belongs to a specific data type.</p>
+
+  <h2>Type Casting with 'as' Keyword:</h2>
+  <p>Type casting with the 'as' keyword is like transforming an ingredient into a specific form while cooking. If you have a mixture of spices and you want to convert it into a powder form (e.g., grinding cumin seeds into cumin powder), you can use the 'as' keyword in Python to cast the ingredient to the desired data type directly within an expression.</p>
+
+  <p>Using the biryani analogy, you can visualize type checking as identifying ingredients and type casting as transforming ingredients into different forms, making it easier to understand these concepts in Python programming.</p>
+ </div>
+ <div class="container">
+
+  <h1>Type Inference and Annotations in Python</h1>
+
+  <h2>Type Inference</h2>
+  <p>Type inference refers to Python's ability to automatically determine the data type of a variable based on its assigned value. In dynamically typed languages like Python, variable types are resolved at runtime rather than compile time. When a variable is assigned a value, Python infers its type from the value itself.</p>
+  <pre><code>x = 10  # x is inferred to be an integer
+y = "hello"  # y is inferred to be a string</code></pre>
+
+  <h2>Type Annotations</h2>
+  <p>Type annotations allow developers to provide hints about the expected types of variables, function arguments, and return values in Python code. Annotations are optional and do not affect the runtime behavior of the program. They are primarily used for documentation and static analysis purposes. Annotations are added using a colon (:) followed by the desired type within function signatures and variable declarations.</p>
+  <pre><code>def add(x: int, y: int) -> int:
+    return x + y
+
+result: int = add(5, 3)</code></pre>
+
+  <h2>Type Hinting</h2>
+  <p>Type hinting is the practice of adding type annotations to Python code to improve readability and maintainability. While type hints are not enforced by the Python interpreter, they can be used by static analysis tools and IDEs to provide feedback and detect potential errors. Type hints are especially useful in large codebases or when collaborating with other developers.</p>
+  <pre><code>from typing import List
+
+def process_numbers(numbers: List[int]) -> List[int]:
+    return [num * 2 for num in numbers]
+
+result: List[int] = process_numbers([1, 2, 3, 4])</code></pre>
+
+</div>
+    <div class="container">
+
+  <h1>Variables in Python</h1>
+
+  <ul>
+    <li><strong>Variable:</strong> A variable is like a labeled container or storage location that holds data, acting as placeholders for data, making it easier to work with and manipulate information within our code.</li>
+    <li><strong>Variable Declaration:</strong> Simple assign a value to it using the assignment operator.</li>
+    <li><strong>Variable Scope:</strong> Global (default language or theme color) and local scope (User Authentication).</li>
+    <li><strong>Global State Management:</strong> To keep important data and settings in one place, making it easy to access and ensure consistency throughout your app. Example: search history tracker for analytics.</li>
+    <li><strong>Type Casting:</strong> Also known as type conversion, the process of converting a value from one data type to another.
+      <ul>
+        <li><strong>Implicit Type Casting (Automatic):</strong> Automatically performs implicit type casting in some situations when it is safe to do so. Example: User Input Processing, Arithmetic Operations, String Concatenation.</li>
+        <li><strong>Explicit Casting:</strong> Intentional conversion of a value from one data type to another by specifying the target data type. Example: Data Validation, API Integration, Database Operations.</li>
+      </ul>
+    </li>
+    <li><strong>Variable Interpolation:</strong> Also known as string interpolation or variable substitution, like filling in the blanks with actual values in a sentence. The placeholders are typically enclosed in curly braces {}.</li>
+    <li><strong>Concatenation:</strong> Combining two or more strings into a single string using the + operator and using f-strings (formatted string literals), str.join(), += operator.</li>
+    <li><strong>Variable Annotations:</strong> Introduced in Python 3.6 and later versions, provide type hints or metadata for variables.</li>
+    <li><strong>Immutable Variables:</strong> Values cannot be changed after creation. Examples include integers, strings, and tuples. Example: Post Likes.</li>
+    <li><strong>Mutable Variables:</strong> Values can be changed after creation. Examples include lists, dictionaries, and sets. Example: caption and comments.</li>
+    <li><strong>Shadowing:</strong> Variable shadowing occurs when a variable declared in an inner scope has the same name as a variable in an outer scope, causing the inner variable to hide or "shadow" the outer one within that scope. Example: User Profile Settings.</li>
+    <li><strong>Garbage Collection:</strong> Automatically reclaims memory occupied by objects that are no longer in use.</li>
+    <li><strong>Variable Packing and Unpacking:</strong> Variable packing initially gathers data into a single container, and variable unpacking later extracts and assigns that data to individual variables, making it accessible and usable. Instagram feature, this helps in managing and displaying multiple photos in an album.</li>
+    <li><strong>Variable References:</strong> A variable that points to an object in memory, allowing you to access and manipulate that object through the variable.</li>
+    <li><strong>Block Scope:</strong> Refers to the region or area within which a variable is accessible and can be used. Variables declared inside a block (within {}) are often said to have block scope. These variables are accessible only within that specific block and its nested blocks.</li>
+    <li><strong>Testing Variables:</strong> Print Statements, Assertions, Unit Testing, Logging.</li>
+  </ul>
+        </div>
+ <div class="container">
+
+ <h1>Data Types in Python</h1>
+
+  <ul>
+    <li><strong>Integer (Immutable):</strong> Integers are useful for representing and performing calculations involving whole numbers. Example: Count.</li>
+    <li><strong>Float (Immutable):</strong> Data type used to represent numbers with decimal points. Example: Ratings and Reviews, Latitude and Longitude coordinates.</li>
+    <li><strong>String (Immutable):</strong> Store and manage text-based information. Users can edit the content they've posted within the platform's rules and capabilities, but they are not directly changing the original string in memory. Example: Captions.</li>
+    <li><strong>Boolean (Immutable):</strong> Used to represent binary states, typically denoting true or false conditions. Example: Follow request accept or not.</li>
+    <li><strong>Tuples (Immutable):</strong> Ordered and allows duplications. Once you create a tuple, you cannot change its contents. Tuples are useful for situations where you want to ensure data integrity or create a collection of values that should not be modified. Example: Storing Coordinates.</li>
+    <li><strong>List (Mutable):</strong> Ordered collections of elements (you can change their contents after creation), allows duplicate values, defined using square brackets []. Example: Managing Likes, Creating a list of saved posts, Managing Comments, User Followers and Followings, User Notifications, User Chat Conversations, User Posts and Stories, and Filtering and Sorting followers methods: append(), insert(), remove(), pop(), extend(), sort(), reverse().</li>
+    <li><strong>List Slicing and Indexing:</strong> List slicing and indexing allow users to access specific elements or portions of a list. Example: Filtering and sorting posts and Displaying User Feeds.</li>
+    <li><strong>Dictionary (Mutable):</strong> Unordered, does not allow duplicate keys. Example: User Profiles.</li>
+    <li><strong>Sets (Mutable):</strong> Removes duplication, unordered collections of unique elements. Example: Common Followers Between Users and Identifying Trending Hashtags.</li>
+    <li><strong>User-defined Classes (Mutable or Immutable):</strong> Objects created from user-defined classes are reference data types and can have mutable attributes.</li>
+    <li><strong>None Type (Immutable):</strong> None is a special object that represents the absence of a value or a null value. It is often used to indicate that a variable or a function doesn't have a meaningful result or that a value is not available.</li>
+  </ul>
+
+
+ </div>
+
+
+
+ <div class="container">
+ <h2>Variable Basics in Python</h2>
+
+  <p>Variable is like a labeled container or storage location that holds data. It's a way to give a name to a value so that you can easily reference and manipulate it in our code. When we define a variable, we choose a name for it, and that name becomes a reference to the data stored in memory. We can then assign values of various data types, such as numbers, strings, or complex objects, to that variable. These variables act as placeholders for data, making it easier to work with and manipulate information within our code.</p>
+
+  <h3>Variable Declaration:</h3>
+  <p>You don't need to explicitly declare variables before using them. Variables are created when you assign a value to them. You simply choose a name for the variable, and Python creates it on-the-fly.</p>
+  <pre><code>x = 42</code></pre>
+  <p>We've declared a variable x and assigned it the value 42. At this point, x exists as a variable in memory.</p>
+
+  <h3>Variable Assignment:</h3>
+  <p>To assign a value to a variable, you use the assignment operator (=). The variable on the left side of the = is assigned the value on the right side.</p>
+  <pre><code>x = 42</code></pre>
+  <p>We've assigned the value 42 to the variable x.</p>
+
+  <h3>Reassignment:</h3>
+  <p>You can change the value of a variable by simply assigning a new value to it. Python is dynamically typed, so you can assign values of different data types to the same variable.</p>
+  <pre><code>x = 42
+x = "Hello, Python!"</code></pre>
+  <p>x is first assigned an integer value and then reassigned a string value.</p>
+
+  <h3>Multiple Assignment:</h3>
+  <p>Python allows you to assign multiple variables in a single line using a comma-separated list of values.</p>
+  <pre><code>a, b, c = 1, 2, 3</code></pre>
+  <p>In this case, a is assigned 1, b is assigned 2, and c is assigned 3.</p>
+
+  <h3>Swapping Variables:</h3>
+  <p>Python allows you to swap the values of two variables without using a temporary variable, thanks to multiple assignment.</p>
+  <pre><code>a, b = b, a  # Swap the values of a and b</code></pre>
+  <p>After this code, the values of a and b will be swapped.</p>
+
+  <h3>Variable Naming Rules:</h3>
+  <ul>
+    <li>Variable names are case-sensitive (e.g., myVar and myvar are different variables).</li>
+    <li>Variable names can contain letters, numbers, and underscores but must start with a letter or underscore (e.g., var_1, _private_var).</li>
+    <li>Variable names cannot be Python keywords (e.g., if, while, for, etc.).</li>
+  </ul>
+
+  <h3>Comments:</h3>
+  <p>It's a good practice to add comments to your code to explain the purpose of variables and the values they hold.</p>
+  <pre><code># This variable holds the user's age
+age = 30</code></pre>
+
+      <h2>Variable Scope in Python</h2>
+
+  <h3>Global Scope:</h3>
+  <p>Global scope refers to the region of the code where a particular variable is accessible or visible. A variable declared outside of any function or block is said to be in the global scope. Global variables are accessible from any part of the code, including both inside and outside functions. They exist for the entire duration of the program's execution like default language or theme color.</p>
+  <pre><code># Global app settings
+default_language = "English"
+theme_color = "Gold"
+background_music_enabled = True
+
+def customize_app():
+    global default_language, theme_color, background_music_enabled
+    default_language = "Sanskrit"
+    theme_color = "Blue"
+    background_music_enabled = False
+
+# Customize the app settings
+customize_app()
+
+# Accessing the customized app settings
+print("Language:", default_language)
+print("Theme Color:", theme_color)
+print("Background Music Enabled:", background_music_enabled)
+</code></pre>
+  <p>In this example, the global variables default_language, theme_color, and background_music_enabled act as app settings that are accessible and modifiable from different parts of the code. The customize_app() function allows you to change these settings.</p>
+
+  <h3>Local Scope:</h3>
+  <p>Local scope refers to a variable declared inside a function. Local variables are only accessible within the function where they are defined. They have limited lifespan and are destroyed when the function completes execution.</p>
+  <pre><code>def perform_action(action):
+    if action == "prayer":
+        prayer_duration = 10  # Local variable for the duration of the prayer action
+        print("Performing prayer for", prayer_duration, "minutes.")
+    elif action == "ritual":
+        ritual_duration = 30  # Local variable for the duration of the ritual action
+        print("Performing ritual for", ritual_duration, "minutes.")
+
+# Perform actions
+perform_action("prayer")
+</code></pre>
+  <p>The local variables prayer_duration and ritual_duration store temporary settings related to the duration of specific actions. These variables are only accessible within their respective blocks of code.</p>
+
+  <h3>Dynamic Variables:</h3>
+  <p>Dynamic variables, such as instance variables in classes, exist as long as the object they belong to exists. They are scoped to the instance or object to which they belong.</p>
+  <pre><code>class MyClass:
+    def __init__(self, value):
+        self.instance_variable = value
+
+# Creating an object of MyClass
+obj = MyClass(42)  # 'instance_variable' exists as long as 'obj' exists
+print(obj.instance_variable)
+</code></pre>
+  <p>These variables are associated with objects and exist as long as the object they belong to exists. Their scope is limited to the instance or object.</p>
+
+      <h2>Global State Management in Python</h2>
+
+  <p>Global state management involves keeping track of important data and settings that need to be accessible from various parts of the application. The main idea is to keep this data and settings in one place, making it easy to access and ensure consistency throughout the app.</p>
+
+  <h3>Example: Global State for a Hypothetical Social Media App</h3>
+  <pre><code># Global state for a hypothetical social media app
+user_name = ""
+user_followers = 0
+user_following = 0
+
+# Function to update user data
+def update_user_data(name, followers, following):
+    global user_name, user_followers, user_following
+    user_name = name
+    user_followers = followers
+    user_following = following
+
+# Function to display user data
+def display_user_data():
+    print(f"Username: {user_name}")
+    print(f"Followers: {user_followers}")
+    print(f"Following: {user_following}")
+
+# Simulate user data update
+update_user_data("debbati_sudheer", 1000, 500)
+
+# Display user data
+display_user_data()
+</code></pre>
+  <p>In this example, the global variables user_name, user_followers, and user_following store important data related to a user's profile. The update_user_data() function is used to update this data, and the display_user_data() function is used to display it.</p>
+
+<h2>Type Casting in Python</h2>
+
+  <p>Type casting, also known as type conversion, is the process of converting a value from one data type to another. You can perform type casting using various built-in functions or by creating new objects of the desired data type.</p>
+
+  <h3>Implicit Type Casting (Automatic)</h3>
+  <p>Implicit type casting automatically occurs in some situations when it is safe to do so. For example, during user input processing, arithmetic operations, and string concatenation.</p>
+  <pre><code># Get user input for two numbers
+num1_str = input("Enter the first number: ")
+num2_str = input("Enter the second number: ")
+# Perform addition without explicit casting
+result = num1_str + num2_str
+print(f"The result of concatenation is: {result}")
+</code></pre>
+
+  <h3>Explicit Casting</h3>
+  <p>Explicit casting is the intentional conversion of a value from one data type to another by specifying the target data type. It's commonly used in data validation, API integration, and database operations.</p>
+  <pre><code># User enters a search query
+user_query = input("Enter your search query: ")
+# Count the number of words in the query (requires splitting the
+string into a list)
+query_words = user_query.split()
+word_count = len(query_words)
+# Check if a specific keyword is in the query (requires string
+comparison)
+if "Python" in user_query:
+    print("Your query contains the word 'Python'.")
+# Perform mathematical operations on numeric values (requires
+type casting)
+user_age_str = input("Enter your age: ")
+user_age = int(user_age_str)
+# Now you can use user_age as an integer for calculations
+</code></pre>
+      <h2>Variable Interpolation in Python</h2>
+
+  <p>Variable interpolation, also known as string interpolation or variable substitution, involves creating a sentence where you want to include specific pieces of information, and you use placeholders to indicate where those pieces should go. The placeholders are typically enclosed in curly braces {}.</p>
+
+  <h3>String Formatting</h3>
+  <p>You can define a string with placeholders and use interpolation to replace those placeholders with variable values. In Python, you can use f-strings or the .format() method for string interpolation:</p>
+  <pre><code># User information
+username = "sudheer"
+follower_count = 1000
+# Create a welcome message using string formatting
+welcome_message = f"Welcome to Instagram, @{username}! You have {follower_count} followers."
+# Print the welcome message
+print(welcome_message)
+</code></pre>
+
+  <h3>Template Engines</h3>
+  <p>Web frameworks often use variable interpolation to generate dynamic HTML content. Template engines like Jinja2 (used with Flask) or Django templates allow you to embed variables and expressions directly into HTML templates. This is especially useful for rendering dynamic web pages.</p>
+
+  <h3>SQL Queries</h3>
+  <p>When constructing SQL queries in database operations, variable interpolation is used to inject dynamic values (e.g., user inputs) safely into the query string:</p>
+  <pre><code>username = "alice"
+query = f"SELECT * FROM users WHERE username = '{username}'"
+</code></pre>
+
+  <h3>Logging and Output Messages</h3>
+  <p>In software development, variable interpolation is useful for creating log messages or outputting dynamic content to the console or log files. It helps in producing informative and context-aware messages.</p>
+  <pre><code>error_code = 404
+log_message = f"Error {error_code}: Page not found"
+</code></pre>
+   <h2>String Concatenation in Python</h2>
+
+  <p>Concatenation refers to the process of combining two or more strings into a single string. You can concatenate strings using the + operator or by using string formatting methods.</p>
+
+  <h3>Using the + Operator for Concatenation:</h3>
+  <pre><code>first_name = "sudheer"
+last_name = "debbati"
+full_name = first_name + " " + last_name
+print(full_name) # Output: "sudheer debbati"
+</code></pre>
+
+  <h3>Using f-strings (Formatted String Literals) for Concatenation:</h3>
+  <pre><code>first_name = "sudheer"
+last_name = "debbati"
+full_name = f"{first_name} {last_name}"
+print(full_name) # Output: "sudheer debbati"
+</code></pre>
+
+  <h3>Using the str.join() Method for Concatenation:</h3>
+  <pre><code>words = ["Hello", "world", "!"]
+sentence = " ".join(words)
+print(sentence) # Output: "Hello world !"
+</code></pre>
+
+  <h3>Using the += Operator for In-Place Concatenation:</h3>
+  <pre><code>text = "Hello"
+text += " World"
+print(text) # Output: "Hello World"
+</code></pre>
+      <h2>Variable Annotations in Python</h2>
+
+  <p>Variable annotations are a valuable tool for improving code quality, especially in larger projects, by making your code more self-documenting and by catching type-related issues early. They allow you to provide type hints or metadata for variables, indicating the expected data type or purpose of a variable.</p>
+
+  <h3>1) Basic Variable Annotation:</h3>
+  <pre><code># Annotating user-related variables
+user_id: int = 12345
+username: str = "instagram_user"
+follower_count: int = 1000
+</code></pre>
+
+  <h3>2) Optional Annotations:</h3>
+  <pre><code># Optional variable annotation for a user's profile image URL
+profile_image_url: str # Type hint without initialization
+</code></pre>
+
+  <h3>3) Annotations for Function Arguments:</h3>
+  <pre><code># Annotations for function arguments and return type
+def post_photo(image_url: str, caption: str) -&gt; bool:
+  # Code for posting the photo
+  return True
+</code></pre>
+
+  <h3>4) Annotations for Class Attributes:</h3>
+  <pre><code># Annotations for class attributes
+from datetime import datetime
+
+class Image:
+  def __init__(self, url: str, upload_date: datetime):
+    self.url = url
+    self.upload_date = upload_date
+</code></pre>
+
+  <h3>5) Dynamic Typing with Annotations:</h3>
+  <pre><code># Dynamic typing while still using annotations
+dynamic_variable: str = "This can change to any valid value"
+dynamic_variable = 42 # Variable can change type dynamically
+</code></pre>
+
+  <h3>6) Type Checking with mypy:</h3>
+  <pre><code># Using mypy for type checking
+from typing import List
+
+def get_followers(user_id: int) -&gt; List[str]:
+  # Code to fetch followers
+  return ["follower1", "follower2"]
+
+result = get_followers(12345) # This passes type checking
+invalid_result = get_followers("invalid_id") # This would raise a type error
+</code></pre>
+      <h2>Mutable and Immutable Variables in Python</h2>
+
+  <h3>Immutable Variables:</h3>
+  <p>Immutable variables are those whose values cannot be changed after they are created.</p>
+  <ul>
+    <li>Integers</li>
+    <li>Floats</li>
+    <li>Strings</li>
+    <li>Tuples</li>
+  </ul>
+
+  <h4>Example: Post Likes (Immutable)</h4>
+  <p>The number of likes on your Instagram posts is also an immutable variable. If someone likes your post, the total count of likes increases, but you can't decrease it directly.</p>
+
+  <h3>Mutable Variables:</h3>
+  <p>Mutable variables are those whose values can be changed after they are created.</p>
+  <ul>
+    <li>Lists</li>
+    <li>Dictionaries</li>
+    <li>Sets</li>
+  </ul>
+
+  <h4>Examples:</h4>
+  <ul>
+    <li>Caption (Mutable): The caption you add to your Instagram post is an example of a mutable variable. You can edit or change the caption after you've posted it.</li>
+    <li>Comments (Mutable): The comments on your Instagram posts are stored as a list, which is a mutable data structure. You can add, edit, or delete comments.</li>
+  </ul>
+
+  <h3>Variable References:</h3>
+  <p>A variable reference in Python is a variable that points to an object in memory, allowing you to access and manipulate that object through the variable.</p>
+
+  <h4>Example:</h4>
+  <pre><code># Define a User Profile class to store user data
+class UserProfile:
+  def __init__(self, username, bio):
+    self.username = username
+    self.bio = bio
+
+# Define a Post class to store post data
+class Post:
+  def __init__(self, user, image_url, caption):
+    self.user = user
+    self.image_url = image_url
+    self.caption = caption
+
+# Create user profiles and posts
+user1 = UserProfile("user123", "Nature lover 🌿")
+user2 = UserProfile("instaFan", "Capturing moments 📸")
+post1 = Post(user1, "image1.jpg", "Enjoying the sunset! ☀️ ")
+post2 = Post(user2, "image2.jpg", "Exploring the city streets. 🏙️ ")
+
+# Variable references to user profiles and posts
+user_profile_reference = user1 # Reference to user1's profile
+post_reference = post1 # Reference to post1
+
+# Accessing and displaying user and post data
+print(f"Username: {user_profile_reference.username}")
+print(f"Bio: {user_profile_reference.bio}")
+print(f"Post by {post_reference.user.username}:")
+print(f"Image URL: {post_reference.image_url}")
+print(f"Caption: {post_reference.caption}")
+  </code></pre>
+       <h2>Variable Shadowing in Python</h2>
+
+  <p>Variable shadowing occurs when a variable declared in an inner scope has the same name as a variable in an outer scope, causing the inner variable to hide or "shadow" the outer one within that scope.</p>
+
+  <p>Example: User Profile Settings</p>
+  <pre><code class="python">
+# Outer scope
+settings = {
+    "theme": "light",
+    "language": "English"
+}
+
+def update_general_settings(new_settings):
+    # Inner scope
+    settings = new_settings  # This 'settings' shadows the outer one
+    save_to_database(settings)
+
+# Later in the code
+general_settings = {
+    "theme": "dark",
+    "language": "Spanish"
+}
+update_general_settings(general_settings)
+
+# 'settings' in the outer scope remains unchanged
+print(settings)
+  </code></pre>
+  <p>In this example, the settings variable inside the update_general_settings function
+shadows the outer one. When update_general_settings is called, it updates the inner
+settings, but the outer settings variable remains unaffected.</p>
+      <h2>Block Scope in Python</h2>
+
+  <p>Block scope refers to the region or area within which a variable is accessible and can be used. Variables declared inside a block (within {}) are often said to have block scope. These variables are accessible only within that specific block and its nested blocks.</p>
+
+  <p>Visibility: Variables with block scope are typically not visible or accessible outside of the block in which they are declared. They are limited to the scope of that block.</p>
+
+  <p>Lifetime: The lifetime of a block-scoped variable is tied to the duration of the block. When the block is exited (execution leaves the block), the variables declared within it go out of scope and are usually deallocated or cleaned up.</p>
+
+  <pre><code class="python">
+if True:
+    x = 10  # x has block scope within this if block
+    print(x)  # This is valid
+
+# Outside the if block, x is no longer accessible
+print(x)  # This will raise an error: NameError: name 'x' is not defined
+  </code></pre>
+
+  <p>In this example, the variable x is declared inside the if block and has block scope limited to that block. Once the if block is exited, x is no longer accessible.</p>
+
+  <p>Block scope is important for managing variables and ensuring that they are only used in the appropriate context, which helps prevent unintended side effects and naming conflicts in your code.</p>
+     <h2>Garbage Collection in Programming</h2>
+
+  <p>Garbage collection is a process in programming languages that automatically reclaims memory occupied by objects that are no longer in use.</p>
+
+  <h3>Example: Image Loading</h3>
+  <ol>
+    <li><strong>Image Loading:</strong> When a user opens their Instagram feed, the app loads images from the server into memory so they can be displayed on the screen. These images consume memory.</li>
+    <li><strong>Navigating Away:</strong> As the user scrolls through their feed, they may navigate away from some posts, moving to new posts or profiles. The images from the posts they've moved away from are no longer needed.</li>
+    <li><strong>Garbage Collection:</strong> Instagram's underlying code, running on a platform like Python or JavaScript, uses garbage collection to periodically scan memory for objects (in this case, images) that are no longer in use. If it detects that an image is no longer needed (e.g., the user has scrolled past it), it marks that image for removal.</li>
+    <li><strong>Reclaiming Memory:</strong> The garbage collector then reclaims the memory occupied by those marked images. This means the memory previously used to store those images is now available for storing new images or other data.</li>
+  </ol>
+      <h2>Scoping in Nested Functions</h2>
+
+  <p>"Scoping" refers to the rules that determine where and how variables can be accessed within a program. Scoping is important because it helps prevent naming conflicts, allows for variable reuse, and helps ensure that variables are used in a predictable and organized manner.</p>
+
+  <h3>Example: Instagram Scoping Analogy</h3>
+  <ol>
+    <li><strong>Your Profile (Local Scope):</strong> This is like your private room. You can have your own photos, videos, and stories in your private room, and you can access them freely. However, the things you have in your room are not visible or accessible to others unless you choose to share them.</li>
+    <li><strong>Friends' Profiles (Enclosing Scope):</strong> These are like the profiles of your friends. You can visit your friends' profiles, view their photos, and interact with their content. Your friends' profiles are not entirely private, and they may allow you to see their posts.</li>
+    <li><strong>The Explore Page (Global Scope):</strong> This is like the Explore page on Instagram, where you can discover popular and trending content from users worldwide. Everyone on Instagram can see the content on the Explore page, and it's accessible from anywhere.</li>
+    <li><strong>Instagram Features (Built-in Scope):</strong> Instagram provides built-in features that are available to all users, like posting photos, following other users, and sending direct messages. These features are always accessible, no matter where you are on the platform.</li>
+  </ol>
+     <h1>Variable Packing and Unpacking</h1>
+
+    <h2>Variable Packing</h2>
+    <p>When users select and upload several photos, the photo IDs or URLs of these images are collected and stored together in a list or another iterable data structure. Each photo ID or URL is essentially a piece of data. All these pieces of data are packed together into a single container, like a list. This is variable packing because you're collecting multiple values into one variable or container.</p>
+    <p><strong>Example (Variable Packing):</strong></p>
+    <pre><code>photo_ids = ["id1", "id2", "id3"]</code></pre>
+
+    <h2>Variable Unpacking</h2>
+    <p>When you want to display the photos individually, you need to extract each photo ID or URL from the container. You use a process called variable unpacking to take the values from the container and assign them to individual variables. This allows you to access and display each photo separately.</p>
+    <p><strong>Example (Variable Unpacking):</strong></p>
+    <pre><code>photo1_id, photo2_id, photo3_id = photo_ids</code></pre>
+
+    <p>So, variable packing initially gathers data into a single container, and variable unpacking later extracts and assigns that data to individual variables, making it accessible and usable. In the context of the Instagram feature, this helps in managing and displaying multiple photos in an album.</p>
+</body>
+<h1>Memory Management in Python</h1>
+
+    <p>Memory management in programming languages, including Python, refers to the allocation and deallocation of memory for variables and data structures. It ensures efficient use of memory resources and prevents issues like memory leaks.</p>
+
+    <p>In Python, memory management is primarily handled by the Python memory manager and the underlying CPython runtime.</p>
+
+    <h2>Automatic Memory Management</h2>
+    <p>Python uses a garbage collection mechanism to automatically reclaim memory occupied by objects that are no longer in use. Developers don't need to explicitly deallocate memory as in languages like C or C++.</p>
+
+    <h2>Reference Counting</h2>
+    <p>Python uses reference counting as the primary mechanism for tracking object lifetimes. Each object in memory has a reference count, and when this count reaches zero, the memory occupied by the object is freed. For example, when a variable goes out of scope or is reassigned, the reference count of the object it previously referenced decreases.</p>
+
+    <h2>Garbage Collection</h2>
+    <p>While reference counting is efficient for many cases, it can't handle circular references (objects referring to each other). To address this, Python uses a cyclic garbage collector that identifies and collects circular references.</p>
+
+    <h2>Memory Allocation</h2>
+    <p>Python's memory manager allocates memory for objects of different types. Small integers, for instance, are cached and reused to improve memory efficiency. Larger objects may be allocated from the heap.</p>
+
+    <h2>Memory Profiling</h2>
+    <p>Python provides tools like the sys module and third-party packages to profile memory usage and identify potential memory leaks.</p>
+
+    <h2>Example</h2>
+    <pre><code>
+# Creating objects
+a = [1, 2, 3] # A list object is created
+b = a # Both 'a' and 'b' reference the same list
+# Modifying objects
+a.append(4) # The list is modified via 'a'
+# Memory management
+del a # The reference count of the list decreases by 1
+b = None # The reference count of the list decreases to 0, and the
+list is deallocated
+# Garbage collection
+# Python's garbage collector identifies that the list is no longer
+reachable and frees its memory
+    </code></pre>
+     </div>
+
+
+ <div class="container">
+  <h1>Data Types</h1>
+    <p>Data types indicate the kind of value that can be stored in a variable and dictate the type of operations that can be performed on that value.</p>
+
+    <h2>Basic Data Types:</h2>
+
+    <h3>Integers (<code>int</code>) (immutable):</h3>
+    <p>Integers are useful for representing and performing calculations involving whole numbers.</p>
+
+    <h4>Arithmetic operations (addition, subtraction, multiplication, division, modulo):</h4>
+    <ul>
+        <li><strong>Likes Count:</strong> Instagram uses integers to represent the number of likes a post receives. For example, if a post has 100 likes, it's represented as an integer:
+            <pre><code>likes_count = 100;</code></pre>
+            Instagram can perform arithmetic operations on likes counts, such as adding new likes when users click the "like" button:
+            <pre><code>likes_count += 1;  // Adding a like to the post</code></pre>
+        </li>
+        <li><strong>Integer division (<code>//</code>):</strong>
+            <p>Post Views: Instagram may record the number of views on a video post using integers. When calculating engagement rates:</p>
+            <pre><code>views_count = 1000;  // The number of views on a video post
+likes_count = 5000;  // The number of likes on the same post
+engagement_rate = likes_count // views_count;
+console.log(engagement_rate);</code></pre>
+            It helps account owners and marketers understand how effectively their content is engaging their audience. Higher engagement rates indicate more active and involved followers, which is often a desirable outcome for social media marketing efforts.
+        </li>
+        <li><strong>Integer literals and representations (e.g., binary, octal, hexadecimal):</strong> Integer literals are specific values that are written directly in your code and represent whole numbers. Integer literals are used to assign fixed integer values to variables or perform calculations that involve whole numbers.
+            <p>User IDs: Instagram assigns unique integer user IDs to each user. These user IDs are typically represented in decimal form but can also be represented in other bases like binary, octal, or hexadecimal.</p>
+            <pre><code>user_id_decimal = 12345;  // User ID in decimal form
+user_id_binary = 0b1100001;  // User ID in binary form (97 in decimal)
+user_id_octal = 0o30071;  // User ID in octal form (12345 in decimal)
+user_id_hexadecimal = 0x3039;  // User ID in hexadecimal form (12345 in decimal)</code></pre>
+            Integers are immutable, which means their values cannot be changed after they are created. When you perform operations on integers, you are actually creating new integer objects with the result of those operations, rather than modifying the original integer.
+            <pre><code>x = 5;  // Create an integer object with the value 5
+y = x;  // Create a new reference to the same integer object
+x += 1;  // Create a new integer object with the value 6
+console.log(x);  // Output: 6
+console.log(y);  // Output: 5</code></pre>
+            When <code>x</code> is incremented by 1, it doesn't modify the original integer with the value 5. Instead, it creates a new integer object with the value 6, and <code>x</code> now refers to this new object. <code>y</code>, which was initially referencing the same integer object as <code>x</code>, is still pointing to the original value of 5.
+        </li>
+    </ul>
+      <h1>Floating-Point Numbers (float)</h1>
+    <p>Floating-point numbers are a data type used to represent numbers with decimal points.</p>
+
+    <h2>Floating-point data type:</h2>
+    <p>Instagram could use floats to represent the average rating of a post, which could be a decimal value like 4.5.</p>
+
+    <h2>Floating-point arithmetic:</h2>
+    <p>When calculating the average number of comments on a set of posts, floating-point arithmetic ensures accuracy even if the results are not whole numbers.</p>
+
+    <h2>Floating-point literals:</h2>
+    <p>When specifying floating-point values directly in code, you use floating-point literals. These literals can be written with or without a decimal point.</p>
+    <p>For example, Instagram might use floating-point literals to set values like the latitude and longitude coordinates for location tags on posts.</p>
+ <h2>Strings (str)</h2>
+    <p>String data type: Examples include usernames, captions, comments, hashtags, and post descriptions.</p>
+    <p>String creation (single quotes, double quotes, triple quotes): Instagram allows users to create and input text using single quotes ('), double quotes ("), or triple quotes (''' or """).</p>
+    <pre><code>username = "instagram_user123" # Double quotes
+caption = "Enjoying a sunny day at the beach!" # Double quotes
+post_description = '''This is a
+long description.''' # Triple quotes</code></pre>
+    <p>String concatenation: String concatenation is used to combine strings dynamically. For example, when displaying a post's author and caption together, string concatenation is used.</p>
+    <pre><code>author = "user123"
+caption = "Fun at the beach!"
+post_info = author + ": " + caption # Concatenating strings</code></pre>
+    <p>String indexing and slicing: Instagram may use string indexing and slicing to access and manipulate specific characters or substrings within a string.</p>
+    <pre><code>mention = "@instagram_user123"
+username = mention[1:] # Slicing to remove "@" symbol</code></pre>
+    <p>String methods (e.g., split(), strip(), join(), replace(), format()):</p>
+    <ul>
+        <li><strong>split():</strong>
+            <p>Description: This method splits a string into a list of substrings based on a specified delimiter.</p>
+            <pre><code>caption = "Enjoying #vacation with @traveler123"
+words = caption.split() # Splitting into words
+print(words)</code></pre>
+        </li>
+        <li><strong>Word-Level Processing:</strong>
+            <p>By splitting a caption or comment into individual words, Instagram can perform various analyses, such as sentiment analysis, keyword extraction, or identifying trending topics. This can help improve content discovery and recommendation algorithms.</p>
+        </li>
+        <li><strong>Multi-word Hashtags:</strong>
+            <p>In some cases, users may use multi-word hashtags (e.g., #SummerVacation). Splitting the text into words allows Instagram to identify and display these multi-word hashtags as separate entities, enhancing the discoverability of related content.</p>
+        </li>
+        <li><strong>Caption Formatting:</strong>
+            <p>When users write long captions or comments, splitting the text into words allows the platform to format the text for readability, ensuring that long sentences or paragraphs are broken into manageable lines.</p>
+            <pre><code>long_caption = "This is a really long caption that needs to be split for better readability on Instagram."
+words = long_caption.split() # Splitting into words
+print(words)</code></pre>
+        </li>
+    </ul>
+      <h2>String Methods - strip(), join(), replace(), format()</h2>
+    <p><strong>strip():</strong></p>
+    <ul>
+        <li>Description: This method removes leading and trailing whitespace (including spaces, tabs, and newline characters) from a string.</li>
+        <li>Instagram Example: Removing extra spaces or newlines from user-generated content.</li>
+        <pre><code>comment = " Awesome pic! \n"
+clean_comment = comment.strip() # Removing leading/trailing whitespace
+print(clean_comment)</code></pre>
+    </ul>
+    <p><strong>join():</strong></p>
+    <ul>
+        <li>Description: This method joins elements of an iterable (e.g., a list) into a single string using the string as a delimiter.</li>
+        <li>Instagram Example: Joining a list of usernames into a comma-separated string.</li>
+        <li>Hashtags and Mentions: Instagram users often include multiple hashtags (#vacation, #beach) or mention multiple users (@user123, @traveler456) in their captions and comments. The join() method allows developers to efficiently combine these tags and mentions into a single, formatted string for display.</li>
+        <li>Comment Formatting: When displaying comments with mentions or replies involving multiple users, the join() method can be used to format and concatenate the usernames in a clear and user-friendly manner.</li>
+        <li>List of Followers or Following: In user profiles, Instagram can use the join() method to display a user's list of followers or accounts they are following. This allows for a clean presentation of these lists, making it easy for users to navigate and discover other users on the platform.</li>
+        <li>Customized Notifications: Instagram can use join() to create customized notifications that include usernames and actions. For example, when a user receives multiple likes on their posts, the platform can join the usernames of those who liked the post with an action message.</li>
+        <pre><code>likers = ["@user123", "@traveler456", "@adventure_seeker"]
+notification = ", ".join(likers) + " liked your photo!" # Customized notification
+print(notification)</code></pre>
+    </ul>
+    <p><strong>replace():</strong></p>
+    <ul>
+        <li>Description: This method replaces all occurrences of a specified substring with another substring.</li>
+        <li>Emoji Translation: Content Moderation: Instagram uses content moderation algorithms to filter out inappropriate or offensive content. The replace() method can be employed to replace prohibited words or phrases with asterisks or other symbols, helping to maintain a safe and respectful environment for users.</li>
+        <li>Search Enhancement: Instagram's search functionality can benefit from the replace() method when users search for variations of hashtags or mentions. Replacing alternative spellings or formats with the standard format can improve search accuracy and help users discover relevant content.</li>
+        <pre><code>search_query = "#vacay"
+standard_query = search_query.replace("#vacay", "#vacation") # Standardizing search query
+print(standard_query)</code></pre>
+    </ul>
+    <p><strong>format():</strong></p>
+    <ul>
+        <li>Description: This method is used for string formatting, allowing you to insert values into a string with placeholders.</li>
+        <li>Instagram's backend development provides several benefits.</li>
+        <li>Localization: Instagram serves a global user base, and the format() method is valuable for localization. Developers can use it to insert translated text and adapt messages, notifications, or captions to the user's preferred language or region.</li>
+        <li>Content Aggregation: When aggregating user-generated content or displaying user interactions (e.g., likes, comments, mentions), the format() method can be used to include relevant usernames, post titles, or timestamps within the aggregated content.</li>
+        <li>Users receive notifications that include specific details about interactions with their content.</li>
+        <pre><code>localized_message = "Hi {}, you have a new follower!".format(username)
+like_notification = "{} liked your photo '{}'.".format(username, post_title)</code></pre>
+    </ul>
+       <h2>String Formatting and Escape Sequences</h2>
+    <p><strong>f-strings (Formatted String Literals):</strong></p>
+    <ul>
+        <li>Description: f-strings are a convenient way to format strings by embedding expressions inside curly braces {} within string literals.</li>
+        <li>Instagram Example: Creating personalized messages or captions with user-specific information.</li>
+        <pre><code>username = "user123"
+post_title = "Beach Sunset"
+caption = f"Hi {username}, check out my latest post: '{post_title}'!" # Using f-strings</code></pre>
+        <li>Here, the values of username and post_title are dynamically inserted into the caption string, resulting in a personalized message.</li>
+    </ul>
+    <p><strong>format() Method:</strong></p>
+    <ul>
+        <li>Description: The format() method is used to format strings by replacing placeholders within a string with values provided as arguments to the method.</li>
+        <li>Instagram Example: Generating customized notifications and complex templates.</li>
+        <pre><code>username = "user123"
+follower_count = 500
+notification = "Hi {}, you have {} new followers!".format(username, follower_count) # Using format()</code></pre>
+    </ul>
+    <p><strong>Escape sequences:</strong></p>
+    <ul>
+        <li><strong>\n - Newline Character:</strong></li>
+        <ul>
+            <li>Instagram Use: Instagram allows users to create multi-line captions, comments, and bio descriptions. The \n escape sequence is used to create newlines, breaking text into multiple lines for better readability.</li>
+            <li>User Benefit: Users can format their content more aesthetically and clearly by organizing their text into paragraphs or adding line breaks where needed.</li>
+            <pre><code>caption = "Line 1\nLine 2"</code></pre>
+        </ul>
+        <li><strong>\t - Tab Character:</strong></li>
+        <ul>
+            <li>Instagram Use: In certain contexts, such as formatting tables or lists, \t can be used to insert tabs for consistent indentation or alignment.</li>
+            <li>User Benefit: Users can create structured and organized content in their posts or comments, making information more accessible and visually appealing.</li>
+            <pre><code>post_content = "Feature List:\n\t- Image filters\n\t- Tagging\n\t- Explore page"</code></pre>
+        </ul>
+        <li><strong>\\ - Backslash Character:</strong></li>
+        <ul>
+            <li>Instagram Use: Instagram may use \\ in various situations, such as when users want to include a literal backslash in their captions or comments.</li>
+            <li>User Benefit: Users can accurately convey their intended message without unintended interpretations of the backslash.</li>
+            <pre><code>caption = "Include a backslash \\ in your text."</code></pre>
+        </ul>
+        <li><strong>\" and \' - Quotation Marks:</strong></li>
+        <ul>
+            <li>Instagram Use: These escape sequences allow users to include double or single quotation marks within their text without prematurely ending a string.</li>
+            <li>User Benefit: Users can use quotation marks when quoting someone or adding emphasis to specific words or phrases in their content.</li>
+            <pre><code>comment = "She said, \"Great pic!\""
+bio = "I'm a 'travel enthusiast' ✈️ "</code></pre>
+        </ul>
+        <li><strong>Unicode and Special Characters:</strong></li>
+        <ul>
+            <li>Instagram Use: Instagram supports various special characters and emojis. Escape sequences, such as \uXXXX, can be used to include Unicode characters in captions, comments, and usernames.</li>
+            <li>User Benefit: Users can add unique characters, symbols, or emojis to personalize their content and express themselves creatively.</li>
+            <pre><code>caption = "Feeling 💖 on a sunny day ☀️ "
+username = "user\u2728"</code></pre>
+        </ul>
+    </ul>
+    <p>In summary, escape sequences in Instagram are valuable for enhancing the formatting and expressiveness of user-generated content. They allow users to create well-structured, visually appealing, and personalized captions, comments, and bio descriptions. Instagram's backend development utilizes escape sequences to interpret and render text-based content accurately, ensuring that user-generated text is presented as intended.</p>
+<h1>String Immutability in Python</h1>
+    <p>Users can edit the content they've posted within the platform's rules and capabilities, but they are not directly changing the original string in memory.</p>
+    <p>It means that once a string is created, its contents cannot be changed directly in memory.</p>
+
+    <h2>User Posts Content</h2>
+    <p>When a user on Instagram creates a post and adds a caption to it, the caption is initially stored as an immutable string in memory.</p>
+    <pre><code>caption = "Having a great time at the beach! 🌴☀️"</code></pre>
+
+    <h2>Caption Editing</h2>
+    <p>Users have the capability to edit the content of their captions within the platform's rules and capabilities. When a user edits the caption, they are essentially creating a new string with the updated content.</p>
+    <p>Original Caption (Immutable): "Having a great time at the beach!"</p>
+    <p>Edited Caption (New String): "Enjoying a sunny day at the beach!"</p>
+    <p>The original caption string remains unchanged in memory. However, the platform associates the edited caption with the post.</p>
+
+    <h2>Garbage Collection</h2>
+    <p>The removal of objects from memory is handled by a process called "garbage collection." Garbage collection identifies objects that are no longer reachable or referenced by the program and frees up the associated memory to be reused.</p>
+    <p>Memory management in Python is automatic and performed by the Python interpreter. When an object (including a string) is no longer referenced by any part of the program, it becomes eligible for garbage collection.</p>
+
+    <h2>Reference Count</h2>
+    <p>Python uses a reference counting mechanism to keep track of how many references there are to an object. When the reference count of an object drops to zero, meaning there are no more references to that object, it becomes a candidate for garbage collection.</p>
+
+    <h3>Example: Managing a String Object's Reference Count</h3>
+    <pre><code>
+    # Create a string object
+    my_string = "Hello, world!"
+
+    # Create another reference to the same string object
+    another_reference = my_string
+    # Add the string to a list
+    my_list = [my_string, another_reference]
+
+    # Remove references
+    del my_string
+    del another_reference
+    my_list.remove(my_string)
+    </code></pre>
+
+    <h2>Timing of Garbage Collection</h2>
+    <p>The actual timing of garbage collection depends on the Python runtime environment. Python's garbage collector runs in the background and periodically identifies and collects objects that are no longer in use.</p>
+
+<h1>Boolean Operations in Python</h1>
+    <p>Boolean values are used to represent binary states, typically denoting true or false conditions.</p>
+
+    <h2>Boolean Data Type</h2>
+    <p>The Boolean data type consists of two values: True and False.</p>
+
+    <h2>Logical Operators</h2>
+    <p>Logical operators such as and, or, and not are used to manipulate Boolean values.</p>
+    <pre><code>
+    sunny_day = True
+    weekend = False
+    if sunny_day and not weekend:
+        print("It's a good day to go for a picnic!")
+    else:
+        print("Don't go")
+    </code></pre>
+
+    <h2>Boolean Expressions and Comparisons</h2>
+    <p>Boolean expressions involve comparisons or conditions that result in Boolean values.</p>
+    <pre><code>
+    temperature = 25
+    is_warm = temperature > 20 # is_warm will be True
+    print(is_warm)
+    </code></pre>
+
+    <h2>Truthy and Falsy Values</h2>
+    <p>Many data types can be evaluated as either True or False in a Boolean context.</p>
+    <p>Falsy values are considered False, while truthy values are considered True.</p>
+    <pre><code>
+    name = ""
+    if not name:
+        print("Name is empty (falsy)")
+    </code></pre>
+
+    <h2>Example: Follow Request Handling</h2>
+    <p>Simulated Instagram user data and function to handle follow requests.</p>
+    <pre><code>
+    # Simulated Instagram user data
+    user_name = "john_doe"
+    follow_request_received = True # Change to False to simulate not receiving a request
+
+    # Function to handle follow requests via the command line
+    def handle_follow_request(username, follow_request):
+        if follow_request:
+            print(f"You have received a follow request from {username}.")
+            accept_request = input("Do you want to accept the request? (yes/no): ").lower()
+            if accept_request == "yes":
+                print(f"You have accepted the follow request from {username}.")
+                # Add code to accept the follow request on Instagram
+            else:
+                print(f"You have deleted the follow request from {username}.")
+                # Add code to delete the follow request on Instagram
+        else:
+            print("You have no follow requests at the moment.")
+
+    # Example usage
+    if __name__ == "__main__":
+        handle_follow_request(user_name, follow_request_received)
+    </code></pre>
+     <h1>Compound Data Types: Lists in Python</h1>
+    <p>Lists are ordered collections of elements and mutable, allowing for the efficient organization and management of data.</p>
+
+    <h2>List Methods</h2>
+    <p>Various methods are available to manipulate lists, including:</p>
+    <ul>
+        <li><strong>append():</strong> Adds an element to the end of the list.</li>
+        <li><strong>insert():</strong> Inserts an element at a specified index.</li>
+        <li><strong>remove():</strong> Removes the first occurrence of a specified element.</li>
+        <li><strong>pop():</strong> Removes and returns an element at a specified index.</li>
+        <li><strong>extend():</strong> Extends a list by appending elements from another iterable.</li>
+        <li><strong>sort():</strong> Sorts the list in ascending order.</li>
+        <li><strong>reverse():</strong> Reverses the order of elements in the list.</li>
+    </ul>
+
+    <h2>Example: Creating a List of Saved Posts</h2>
+    <p>We can use lists to manage collections of saved posts, each represented by a dictionary with image and caption details.</p>
+    <pre><code>
+    # Create a list of saved posts
+    saved_posts = [
+        {"image": "post1.jpg", "caption": "Beautiful sunset"},
+        {"image": "post2.jpg", "caption": "Delicious food"},
+        {"image": "post3.jpg", "caption": "Travel adventures"},
+    ]
+
+    # Display the saved posts
+    for post in saved_posts:
+        print(f"Image: {post['image']}")
+        print(f"Caption: {post['caption']}")
+        print()
+    </code></pre>
+    <p>This example demonstrates how to create a list of saved posts using dictionaries to store image filenames and captions. The list is then iterated through to display each saved post's details.</p>
+ <h1>List Comprehension</h1>
+    <p>List comprehension provides a concise way to create lists based on existing lists. It is a powerful and efficient way to generate lists.</p>
+    <h2>Example: Filtering and Sorting Followers</h2>
+    <p>Below is a Python example demonstrating how to filter and sort followers based on different preferences:</p>
+    <pre><code>
+import tkinter as tk
+# Example data representing posts and follower timestamps
+posts = [
+    {"post_id": 1, "text": "Post 1"},
+    {"post_id": 2, "text": "Post 2"},
+    {"post_id": 3, "text": "Post 3"},
+]
+# Timestamps representing when followers followed the account (in days)
+follower_timestamps = {
+    "follower1": 3, # Followed 3 days ago (recent follower)
+    "follower2": 10, # Followed 10 days ago (past follower)
+    "follower3": 2, # Followed 2 days ago (recent follower)
+}
+# Function to filter and sort posts based on user preference
+def filter_and_sort_posts():
+    preference = preference_var.get()
+    if preference == "recent":
+        filtered_posts = [post for post in posts if follower_timestamps.get("follower1") <= 7]
+    elif preference == "past":
+        filtered_posts = [post for post in posts if follower_timestamps.get("follower1") > 7]
+    elif preference == "earliest":
+        earliest_follower = min(follower_timestamps, key=follower_timestamps.get)
+        filtered_posts = [post for post in posts if follower_timestamps.get(earliest_follower) == follower_timestamps.get(post["post_id"])]
+    else:
+        latest_follower = max(follower_timestamps, key=follower_timestamps.get)
+        filtered_posts = [post for post in posts if follower_timestamps.get(latest_follower) == follower_timestamps.get(post["post_id"])]
+    sorted_posts = sorted(filtered_posts, key=lambda x: x["post_id"])
+    display_posts(sorted_posts)
+
+# Function to display posts in the GUI
+def display_posts(posts):
+    post_text.delete(1.0, tk.END)
+    for post in posts:
+        post_text.insert(tk.END, f"Post ID: {post['post_id']}, Text: {post['text']}\n")
+
+# Create the main application window
+root = tk.Tk()
+root.title("Post Filter and Sort")
+
+# Create a label and dropdown for user preference
+preference_label = tk.Label(root, text="Select Follower Preference:")
+preference_label.pack()
+preference_var = tk.StringVar()
+preference_var.set("earliest") # Default preference
+preference_dropdown = tk.OptionMenu(root, preference_var, "recent", "past", "earliest", "latest")
+preference_dropdown.pack()
+
+# Create a filter and sort button
+filter_sort_button = tk.Button(root, text="Filter and Sort", command=filter_and_sort_posts)
+filter_sort_button.pack()
+
+# Create a text area to display posts
+post_text = tk.Text(root, height=10, width=40)
+post_text.pack()
+
+# Start the Tkinter main loop
+root.mainloop()
+    </code></pre>
+      <h1>Nested Lists</h1>
+    <p>A nested list is a list that contains one or more lists as its elements.</p>
+    <h2>Example: Post Data</h2>
+    <p>Represent a post's content, comments, and likes using nested lists:</p>
+    <h3>Example with Comments</h3>
+    <pre><code>
+post_data = [
+    # Main post content (a list containing image URL, caption, and location)
+    ["image_url", "This is the post caption.", "New York, NY"],
+    # Comments (a list of lists, each inner list represents a comment)
+    [
+        ["user1", "Great photo!", "2023-09-20 14:30:00", []], # Comment 1 with an empty list for replies
+        ["user2", "Love it!", "2023-09-21 10:15:00", [ # Comment 2 with a list of replies
+            ["user3", "Thank you!", "2023-09-22 08:45:00"], # Reply 1 to Comment 2
+            ["user4", "Awesome shot!", "2023-09-22 09:00:00"] # Reply 2 to Comment 2
+        ]],
+        ["user5", "Nice view!", "2023-09-23 11:30:00", []], # Comment 3 with an empty list for replies
+    ],
+    # Likes (a list of usernames)
+    ["user1", "user2", "user4", "user5"]
+]
+    </code></pre>
+    <h2>Accessing Post Data</h2>
+    <pre><code>
+image_url, caption, location = post_data[0] # Accessing main post content
+comments = post_data[1] # Accessing comments (a list of lists)
+likes = post_data[2] # Accessing likes (a list of usernames)
+    </code></pre>
+    <h2>Displaying Post Data</h2>
+    <pre><code>
+print("Post Content:")
+print(f"Image URL: {image_url}")
+print(f"Caption: {caption}")
+print(f"Location: {location}")
+
+print("\nComments and Replies:")
+for comment in comments:
+    username, text, timestamp, replies = comment
+    print(f"{username}: {text} ({timestamp})")
+    # Display replies to this comment, if any
+    for reply in replies:
+        reply_username, reply_text, reply_timestamp = reply
+        print(f" ↳ {reply_username}: {reply_text} ({reply_timestamp})")
+
+print("\nLikes:")
+for username in likes:
+    print(username)
+    </code></pre>
+      <h1>List Slicing and Indexing</h1>
+    <h2>Example of Indexing: Filtering and Sorting Posts</h2>
+    <pre><code>
+# List of posts (each post is a dictionary)
+posts = [
+    {"id": 1, "content": "Post 1", "timestamp": "2023-09-25 10:00:00"},
+    {"id": 2, "content": "Post 2", "timestamp": "2023-09-25 09:30:00"},
+    {"id": 3, "content": "Post 3", "timestamp": "2023-09-24 15:45:00"},
+]
+# Sorting posts by timestamp in descending order (most recent first)
+sorted_posts = sorted(posts, key=lambda x: x["timestamp"], reverse=True)
+# Display sorted posts
+for post in sorted_posts:
+    print(f"Post ID: {post['id']}, Content: {post['content']}, Timestamp: {post['timestamp']}")
+    </code></pre>
+
+    <h2>Slicing Example: Displaying User Feeds</h2>
+    <pre><code>
+# Example list of user's posts
+user_posts = [
+    "Post 1", "Post 2", "Post 3", "Post 4", "Post 5",
+    "Post 6", "Post 7", "Post 8", "Post 9", "Post 10"
+]
+# Function to display a subset of posts using list slicing
+def display_posts(posts, start, end):
+    for i in range(start, end):
+        if i < len(posts):
+            print(posts[i])
+# Initial display: Show the first 3 posts
+print("Initial Feed (First 3 Posts):")
+display_posts(user_posts, 0, 3)
+# Simulate scrolling: Load and display the next 3 posts
+scroll_start = 3
+scroll_end = 6
+print("\nLoading More Posts (Next 3):")
+display_posts(user_posts, scroll_start, scroll_end)
+# Simulate scrolling further: Load and display the next 3 posts
+scroll_start = 6
+scroll_end = 9
+print("\nLoading More Posts (Next 3):")
+display_posts(user_posts, scroll_start, scroll_end)
+    </code></pre>
+
+    <p>List slicing and indexing allow users to access specific elements or portions of a list efficiently. Indexing is used to access individual elements, while slicing is used to extract a sublist of elements. In the provided examples, indexing is used to filter and sort posts based on timestamps, while slicing is used to display a subset of posts in a user's feed.</p>
+  <h1>List Unpacking</h1>
+    <p>List unpacking, also known as iterable unpacking, is a feature in Python that allows you to assign the elements of a list (or any iterable) to multiple variables in a single line of code. In the context of Instagram, list unpacking can be used in various ways to improve the readability and efficiency of code, benefiting both developers and users.</p>
+
+    <h2>Example: Unpacking User Data</h2>
+    <pre><code>
+# Sample user data (username, full name, location)
+user_data = ["johndoe", "John Doe", "New York"]
+# Unpack user data into separate variables
+username, full_name, location = user_data
+# Display the unpacked data
+print("Username:", username)
+print("Full Name:", full_name)
+print("Location:", location)
+    </code></pre>
+
+    <p>List unpacking offers several benefits, including faster loading, fewer bugs, and improved code consistency. By assigning multiple variables in a single line, list unpacking enhances code readability and reduces the chance of errors.</p>
+       <h1>Tuples</h1>
+    <p>Tuples are ordered and immutable data structures in Python that allow duplications. They are useful for situations where you want to ensure data integrity or create a collection of values that should not be modified.</p>
+
+    <h2>Example: Storing Coordinates</h2>
+    <pre><code>
+# Define a tuple to represent coordinates
+coordinates = (40.7128, -74.0060)  # Latitude and longitude of New York
+    </code></pre>
+
+    <p>Tuples can effectively represent and maintain data as an immutable unit. They ensure that related pieces of information are always associated with each other, contributing to consistent and reliable data.</p>
+
+    <h2>Named Tuples</h2>
+    <p>Named tuples are a subclass of tuples that have named fields, providing more readable and self-documenting code.</p>
+    <pre><code>
+from collections import namedtuple
+
+# Define a named tuple for user profiles
+UserProfile = namedtuple("UserProfile", ["username", "full_name", "followers", "following"])
+user = UserProfile("johndoe", "John Doe", 1000, 500)
+    </code></pre>
+
+    <p>In Instagram's development, tuples can be used to represent structured data such as post information or user profiles. Their immutability ensures data integrity, and named tuples enhance code readability.</p>
+      <h1>Dictionaries</h1>
+    <p>Dictionaries are unordered, mutable data structures in Python that represent various data structures, such as user profiles, post information, comments, and more.</p>
+
+    <h2>Example: User Profiles</h2>
+    <pre><code>
+# Sample user profile dictionary
+user_profile = {
+    "username": "johndoe",
+    "full_name": "John Doe",
+    "followers": 1000,
+    "following": 500
+}
+
+# Accessing user profile data
+print("Username:", user_profile["username"])
+print("Full Name:", user_profile["full_name"])
+print("Followers:", user_profile["followers"])
+print("Following:", user_profile["following"])
+    </code></pre>
+
+    <h2>Example: Symbol Lookup</h2>
+    <pre><code>
+# List of usernames and their follower counts
+user_followers = {
+    "user1": 1200,
+    "user2": 800,
+    "user3": 1500,
+    "user4": 900
+}
+
+# Create a dictionary of popular users with more than 1000 followers
+popular_users = {username: followers for username, followers in user_followers.items() if followers > 1000}
+
+# Print the dictionary of popular users
+print("Popular Users:", popular_users)
+    </code></pre>
+
+    <p>Dictionary methods such as <code>keys()</code>, <code>values()</code>, <code>items()</code>, <code>get()</code>, and <code>update()</code> provide various functionalities for working with dictionaries. Additionally, dictionary comprehensions offer a concise and expressive syntax for generating dictionaries from iterable data.</p>
+ <h1>Nested Dictionaries</h1>
+    <p>Dictionaries can be nested within each other, creating a hierarchical structure for representing complex data. Instagram may use nested dictionaries to manage user interactions, such as tracking comments on posts or categorizing notifications.</p>
+
+    <h2>Example: Managing Comments on Posts</h2>
+    <pre><code>
+# Nested dictionary to represent comments on a post
+post_comments = {
+    "post1": {
+        "comment1": {
+            "username": "user123",
+            "text": "Amazing photo!",
+            "timestamp": "2023-09-25 15:00:00"
+        },
+        "comment2": {
+            "username": "user456",
+            "text": "I love the beach!",
+            "timestamp": "2023-09-25 15:30:00"
+        }
+    },
+    "post2": {
+        "comment1": {
+            "username": "user789",
+            "text": "Great shot!",
+            "timestamp": "2023-09-25 16:15:00"
+        }
+    }
+}
+
+# Accessing and printing comments on post1
+post1_comments = post_comments["post1"]
+for comment_id, comment_data in post1_comments.items():
+    print("Comment ID:", comment_id)
+    print("Username:", comment_data["username"])
+    print("Text:", comment_data["text"])
+    print("Timestamp:", comment_data["timestamp"])
+    </code></pre>
+
+    <p>This example demonstrates how nested dictionaries can be used to manage comments on Instagram posts. Each post has its own dictionary containing comments, and each comment is represented as a dictionary with attributes like username, text, and timestamp.</p>
+      <h1>Sets and Frozensets in Instagram</h1>
+    <p>Sets and frozensets are useful data structures in Instagram for managing collections of unique elements and ensuring data integrity.</p>
+
+    <h2>Example: Common Followers Between Users</h2>
+    <pre><code>
+# Followers of User A and User B
+followers_a = {"follower1", "follower2", "follower3", "follower4"}
+followers_b = {"follower3", "follower4", "follower5", "follower6"}
+# Find common followers between User A and User B
+common_followers = followers_a.intersection(followers_b)
+# Print the common followers
+print("Common Followers:", common_followers)
+    </code></pre>
+
+    <p>The <code>intersection()</code> method is used to find followers who follow both User A and User B, ensuring that only common followers are identified.</p>
+
+    <h2>Example: Identifying Trending Hashtags</h2>
+    <pre><code>
+# Hashtags from multiple posts
+post1_hashtags = {"#travel", "#adventure", "#explore"}
+post2_hashtags = {"#nature", "#photography", "#travel"}
+post3_hashtags = {"#food", "#travel", "#delicious"}
+# Combine hashtags from multiple posts to find trending hashtags
+trending_hashtags = post1_hashtags.union(post2_hashtags, post3_hashtags)
+# Print the trending hashtags
+print("Trending Hashtags:", trending_hashtags)
+    </code></pre>
+
+    <p>The <code>union()</code> method combines hashtags from multiple posts, helping identify trending tags across the platform.</p>
+
+    <h2>Example: Managing User Preferences</h2>
+    <pre><code>
+# User preferences for content categories
+user_preferences = {"sports", "food", "travel", "music"}
+# Content categories to be excluded (e.g., blocked categories)
+excluded_categories = {"music", "politics"}
+# Apply user preferences by excluding blocked categories
+filtered_preferences = user_preferences.difference(excluded_categories)
+# Print the filtered user preferences
+print("Filtered Preferences:", filtered_preferences)
+    </code></pre>
+
+    <p>The <code>difference()</code> method helps apply user preferences by excluding blocked categories, enhancing their experience on the platform.</p>
+
+
+ </div>
+    <footer>
+        @sudheer debbati . All Rights Reserved
     </footer>
 </body>
 </html>
